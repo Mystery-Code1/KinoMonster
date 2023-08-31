@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="Eng" class="h-100" ng-app>
+	
+	<head>
+		<title>КиноМонстр - Фильмы</title>
+		{% include 'layouts/head.html' %}
+		<script type="text/javascript">
+			window.onload = function() {
+				var nav_link = document.querySelectorAll("#films_link")
+				if (nav_link.length > 0) {
+					nav_link[0].style.color = "#ADFF2F"
+				}
+			}
+		</script>
+	</head>
+
+	<body vlink="#ADFF2F" class="d-flex flex-column h-100">
+
+		{% include 'layouts/header.html' %}
+
+		<main class="row content-indent flex-shrink-0">
+
+			<div class="col-md-12 col-lg-8">
+				<article class="article-container">
+					<div class="thumb-container no-indent">
+						<img class="thumbnail-image" alt="Матрица 4: Воскрешение" src="{% static 'image/1.jpeg' %}">
+					</div>
+					<div class="article-text">
+						<h4 data-content class="article-title">Матрица 4: Воскрешение</h4>
+						<p class="ordinary-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam omnis distinctio cum nesciunt eaque voluptas, mollitia tenetur ex fugit nostrum perspiciatis quo expedita nulla voluptate voluptates consequatur quae, ipsam?
+						</p>
+					</div>
+					<a data-content class="about-link article-link" href="#">Подробнее</a>
+				</article>
+
+				<article class="article-container">
+					<div class="thumb-container no-indent">
+						<img class="thumbnail-image" alt="Безумный Макс: Дорога ярости" src="{% static 'image/2.jpeg' %}">
+					</div>
+					<div class="article-text">
+						<h4 data-content class="article-title">Безумный Макс: Дорога ярости</h4>
+						<p class="ordinary-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam omnis distinctio cum nesciunt eaque voluptas, mollitia tenetur ex fugit nostrum perspiciatis quo expedita nulla voluptate voluptates consequatur quae, ipsam?
+						</p>
+					</div>
+					<a data-content class="about-link article-link" href="#">Подробнее</a>
+				</article>
+
+				<article class="article-container">
+					<div class="thumb-container no-indent">
+						<img class="thumbnail-image" alt="Интерстеллар" src="{% static 'image/3.jpeg' %}">
+					</div>
+					<div class="article-text">
+						<h4 data-content class="article-title">Интерстеллар</h4>
+						<p class="ordinary-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam omnis distinctio cum nesciunt eaque voluptas, mollitia tenetur ex fugit nostrum perspiciatis quo expedita nulla voluptate voluptates consequatur quae, ipsam?
+						</p>
+					</div>
+					<a data-content class="about-link article-link" href="#">Подробнее</a>
+				</article>
+
+				<article class="article-container">
+					<div class="thumb-container no-indent">
+						<img class="thumbnail-image" alt="Облачный атлас" src="{% static 'image/4.jpeg' %}">
+					</div>
+					<div class="article-text">
+						<h4 data-content class="article-title">Облачный атлас</h4>
+						<p class="ordinary-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam omnis distinctio cum nesciunt eaque voluptas, mollitia tenetur ex fugit nostrum perspiciatis quo expedita nulla voluptate voluptates consequatur quae, ipsam?
+						</p>
+					</div>
+					<a data-content class="about-link article-link" href="#">Подробнее</a>
+				</article>
+			</div>
+
+			{% include 'layouts/aside.html' %}
+
+		</main>
+
+		{% include 'layouts/footer.html' %}
+	</body>
+
+</html>

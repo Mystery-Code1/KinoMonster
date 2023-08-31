@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="Eng" class="h-100" ng-app>
+	<head>
+		<title>КиноМонстр - Главная страница</title>
+		{% include 'layouts/head.html' %}
+		<script type="text/javascript">
+			window.onload = function() {
+				var nav_link = document.querySelectorAll("#home_link")
+				if (nav_link.length > 0) {
+					nav_link[0].style.color = "#ADFF2F"
+				}
+			}
+		</script>
+	</head>
+		<body vlink="#ADFF2F" class="d-flex flex-column h-100">
+			<!-- HEADER -->
+			{% include 'layouts/header.html' %}
+
+				<main class="row content-indent flex-shrink-0">
+
+					<div class="col-md-12 col-lg-8">
+
+						<section class="films-menu">
+
+	  							<span data-content class="movie-type">Новые фильмы</span>
+	  								<div class="banner-container" align="center">
+	  										<div class="poster-container" align="center">
+	  	  										<img class="poster " alt="Матрица: Воскрешение" src="{% static 'image/1.jpeg' %}">
+	  	  										<p data-content >Матрица 4: Воскрешение</p>
+	  	  								</div>
+	  	  								<div class="poster-container">
+		   											<img class="poster" alt="Безумный Макс: Дорога ярости" src="{% static 'image/2.jpeg' %}">
+		   											<p data-content >Безумный Макс: Дорога ярости</p>
+		   									</div>
+		   									<div class="poster-container">
+		   											<img class="poster" alt="Интерстеллар" src="{% static 'image/3.jpeg' %}">
+		   											<p data-content >Интерстеллар</p>
+		   									</div>
+		   									<div class="poster-container">
+		   											<img class="poster" alt="Cloud atlas" src="{% static 'image/4.jpeg' %}">
+		   											<p data-content >Облачный Атлас</p>
+		   									</div>	
+		   							</div>
+
+	  							<span data-content class="movie-type">Новые сериалы</span>
+	  								<div class="banner-container">
+	  										<div class="poster-container">
+	    											<img class="poster" alt="Гоголь" src="{% static 'image/5.jpeg' %}">
+	    											<p data-content >Гоголь</p>
+	    									</div>
+	    									<div class="poster-container">
+		   											<img class="poster" alt="Ходячие мертвецы" src="{% static 'image/6.jpeg' %}">
+		   											<p data-content >Ходячие мертвецы</p>
+		   									</div>
+		   									<div class="poster-container">
+		   											<img class="poster" alt="Во все тяжкие" src="{% static 'image/7.jpeg' %}">
+		   											<p data-content >Во все тяжкие</p>
+		   									</div>
+		   									<div class="poster-container">		
+		   											<img class="poster" alt="Секретные материалы" src="{% static 'image/8.jpeg' %}">
+		   											<p data-content >Секретные материалы</p>
+		   									</div>
+	     							</div>
+
+	     			</section>
+
+	     			<article class="articles">
+
+  							<div class="article-container">
+										<h1 data-content class="article-title">Как снимали интерстеллар</h1>
+ 										<p data-content class="ordinary-text">45 лет исполнилось Кристоферу Нолану — одному из самых успешных режиссеров нашего времени, чьи работы одинаково любимы как взыскательными критиками, так и простыми зрителями. Фильмом изначально занималась студия Paramount. Когда Кристофер Нолан занял место режиссера, студия Warner Bros., которая выпускала его последние фильмы, добилась участия в проекте. ...</p>
+  									<a data-content class="article-link" href="#">Читать далее</a>
+   							</div>
+
+  							<div class="article-container">
+ 										<h1 data-content class="article-title">Актер Том Хенск поделился впечатлениями о фестивале</h1>
+   									<p data-content class="ordinary-text">16 февраля в Лондоне состоялась 67-я церемония вручения наград Британской киноакадемии. ЛеонардоДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен Миррен, Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в нашем репортаже. ...</p>
+   									<a data-content class="article-link" href="#">Читать далее</a>
+  							</div>
+
+  					</article>
+
+  				</div>
+
+  				{% include 'layouts/aside.html' %}
+
+			</main>
+
+			{% include 'layouts/footer.html' %}
+		</body>
+</html>

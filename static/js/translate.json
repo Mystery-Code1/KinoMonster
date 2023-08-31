@@ -1,0 +1,56 @@
+{
+    "data-content": [
+
+        ["Язык", "Language"],
+        ["К и н о М о н с т р", "K i n o M o n s t e r"],
+        ["Кино - наша страсть!", "Cinema - is our passion!"],
+        ["Контакты", "Contacts"],
+        ["Сериалы", "Serials"],
+        ["Фильмы", "Films"],
+        ["Главная", "Main"],
+        ["Поиск", "Search"],
+        ["Войти", "Sign in"],
+        ["Забыли пароль?", "Forget password?"],
+        ["Регистрация", "Registration"],
+        ["Новости", "News"],
+        ["Мы запустили", "We have launched"],
+        ["расширенный поиск", "an advanced search"],
+        ["читать", "read"],
+        ["Рейтинг<br> фильмов", "Rating of <br> films"],
+        ["Интерстеллар", "Interstellar"],
+        ["Матрица", "Matrix"],
+        ["Безумный Макс", "Mad Max"],
+        ["Cloud atlas", "Cloud atlas"],
+        ["Новые фильмы", "New films"],
+        ["Матрица 4: Воскрешение", "Matrix 4: Resurrection"],
+        ["Безумный Макс: Дорога ярости", "Mad Max: Fury Road"],
+        ["Облачный атлас", "Cloud atlas"],
+        ["Облачный Атлас", "Cloud atlas"],
+        ["Новые сериалы", "New serials"],
+        ["Гоголь", "Gogol"],
+        ["Ходячие мертвецы", "The walking dead"],
+        ["Во все тяжкие", "Breaking Bad"],
+        ["Секретные материалы", "The X-Files"],
+        ["Как снимали интерстеллар", "How Interstellar was filmed"],
+        ["45 лет исполнилось Кристоферу Нолану — одному из самых успешных режиссеров нашего времени, чьи работы одинаково любимы как взыскательными критиками, так и простыми зрителями. Фильмом изначально занималась студия Paramount. Когда Кристофер Нолан занял место режиссера, студия Warner Bros., которая выпускала его последние фильмы, добилась участия в проекте. ...", "Christopher Nolan is 45 years old — one of the most successful directors of our time, whose works are equally loved by both discerning critics and ordinary viewers. The film was originally handled by Paramount Studio. When Christopher Nolan took over as director, Warner Bros. studio, which produced his last films, achieved participation in the project..."],
+        ["Актер Том Хенск поделился впечатлениями о фестивале", "Actor Tom Hanks shared his impressions of the festival"],
+        ["16 февраля в Лондоне состоялась 67-я церемония вручения наград Британской киноакадемии. ЛеонардоДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен Миррен, Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в нашем репортаже. ...", "On February 16, the 67th British Academy Awards Ceremony took place in London. Leonardo Dicaprio, Brad Pitt, Angelina Jolie, Cate Blanchett, Helen Mirren, Amy Adams, Christian Bale, Alfonso Cuaron and other guests and award winners are in our report. ..."],
+        ["Читать далее", "Read more"],
+        ["Оставьте небольшой отзыв о нашем портале", "Leave a small review about our portal"],
+        ["Ваше имя", "Your name"],
+        ["Ваш email", "Your email"],
+        ["Подробнее", "More detail"]
+    ],
+    "data-content-btn": [
+        ["RU", "ENG"],
+        ["Войти", "Sign in"],
+        ["Подробности", "More detail"],
+        ["Найти", "Search"],
+        ["Отправить", "Send"]
+    ],
+    "data-content-placeholder": [
+        ["Ваш запрос?", "Your request?"],
+        ["Логин", "Login"],
+        ["Пароль", "Password"]
+    ]
+}

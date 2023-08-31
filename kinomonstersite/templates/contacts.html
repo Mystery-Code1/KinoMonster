@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="Eng" class="h-100" ng-app>
+
+	<head>
+		<title>КиноМонстр - Контакты</title>
+		{% include 'layouts/head.html' %}
+		<script type="text/javascript">
+			window.onload = function() {
+				var nav_link = document.querySelectorAll("#contacts_link")
+				if (nav_link.length > 0) {
+					nav_link[0].style.color = "#ADFF2F"
+				}
+			}
+		</script>
+	</head>
+
+	<body vlink="#ADFF2F" class="d-flex flex-column h-100">
+
+		{% include 'layouts/header.html' %}
+
+		<main class="row content-indent flex-shrink-0">
+
+			<div class="col-md-12 col-lg-8 mb-5">
+				<h1 data-content class="mb-4">Контакты</h1>
+
+				<p data-content class="text">Оставьте небольшой отзыв о нашем портале</p>
+				<form method="." class="d-flex flex-column mb-4">
+					<div class="input-group flex-nowrap mb-3">
+  						<span data-content class="input-group-text">Ваше имя</span>
+						<input type="text" class="form-control" name="user-name">
+					</div>
+
+					<div class="input-group flex-nowrap mb-3">
+  						<span data-content class="input-group-text">Ваш email</span>
+						<input type="text" class="form-control" name="user-email">
+					</div>
+
+					<textarea class="feedback-area" name="user-feedback"></textarea>
+
+				</form>
+
+				<input data-content-btn type="button" class="block-btn send-btn" value="Отправить">
+			</div>
+
+			{% include 'layouts/aside.html' %}
+
+		</main>
+
+		{% include 'layouts/footer.html' %}
+	</body>
+
+</html>

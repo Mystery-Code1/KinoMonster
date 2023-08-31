@@ -1,0 +1,39 @@
+version: "3.8"
+services:
+  web-server:
+    container_name: django_web_server
+    build: .
+    environment:
+      - PYTHONUNBUFFERED=1
+    tty: true
+    volumes:
+      - .:/var/www/kinomonster
+    ports:
+      - 8000:8000
+    command: >
+      sh -c "cd var/www/kinomonster &&
+      pipenv run python db_loading.py &&
+      pipenv run python manage.py migrate && pipenv run python manage.py runserver 0.0.0.0:8000"
+    depends_on: 
+      - app-db
+    networks:
+      - localnetwork
+
+    
+  app-db:
+    container_name: mysql_kino_db
+    image: mysql:8
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=kinodb
+    networks:
+      - localnetwork
+
+networks:
+  localnetwork:
+    name: kinomonster_localnet
+    driver: bridge
+
+    

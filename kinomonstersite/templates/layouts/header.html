@@ -1,0 +1,20 @@
+<header class="header__block">
+	<div id="lang__panel">
+		<h5 data-content style="display:inline-block;">Язык</h5> 
+		<input data-content-btn type="button" class="btn change__lang-btn" value="RU">
+	</div>
+
+	<section class="header">
+		<h1 data-content id="window__title">К и н о М о н с т р</h1>
+			<p data-content id="precom">Кино - наша страсть!</p>
+	</section>
+		
+	<nav class="navigation">
+		<a data-content class="nav-item" href="{% url 'contacts' %}" id="contacts_link">Контакты</a>
+		<a data-content class="nav-item" href="{% url 'serials' %}" id="serials_link">Сериалы</a>
+		<a data-content class="nav-item" href="{% url 'films' %}" id="films_link">Фильмы</a>
+		<a data-content class="nav-item" href="{% url 'home' %}" id="home_link">Главная</a>
+	</nav>
+
+
+</header>
